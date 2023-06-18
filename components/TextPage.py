@@ -180,7 +180,8 @@ def getSentiments(userText, type):
         
 def renderPage():
     st.title("Heal.AI")
-    image = Image.open('/home/harry/dev/project/polyhack/components/images/textSEN.png')
+    folder = os.path.dirname(__file__)+"/images"
+    image = Image.open(f'{folder}/textSEN.png')
     st.image(image)
 
     components.html("""<hr style="height:3px;border:none;color:#333;background-color:#333; margin-bottom: 10px" /> """)
